@@ -13,7 +13,7 @@ class CategoryResource extends JsonResource
         return [
             'name' => $this->name,
             'href' => [
-                'products' => route('product.index',$this->id)
+                'product' => route('product.index',$this->id)
             ]
         ];
     }
