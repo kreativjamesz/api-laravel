@@ -16,7 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         factory(Category::class,17)->create();
+        $this->command->info("Category Seeded :)");
         factory(Product::class,50)->create();
+        $this->command->info("Product seeded :)");
         factory(Review::class,300)->create();
+        $this->command->info("Review seeded :)");
     }
 }
